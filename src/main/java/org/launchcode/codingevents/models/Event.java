@@ -24,14 +24,14 @@ public class Event {
     @Email(message="Invalid email. Try again.")
     private String contactEmail;
 
-    @NotBlank(message="Location cannot be left blank.")
-    private String location;
-
-    @AssertTrue
-    private String attendeeRegisteredOrNot;
-
-    @Positive(message="Number should one or more.")
-    private int numberOfAttendees;
+//    @NotBlank(message="Location cannot be left blank.")
+//    private String location;
+//
+//    @AssertTrue
+//    private String attendeeRegisteredOrNot;
+//
+//    @Positive(message="Number should one or more.")
+//    private int numberOfAttendees;
 
     private EventType type;
 
