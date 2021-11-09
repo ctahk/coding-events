@@ -23,8 +23,6 @@ public class EventController {
     @Autowired
     private EventCategoryRepository eventCategoryRepository;
 
-    //findAll, save, findById
-
     @GetMapping
     public String displayAllEvents(@RequestParam(required = false) Integer categoryId, Model model) {
         if (categoryId == null) {

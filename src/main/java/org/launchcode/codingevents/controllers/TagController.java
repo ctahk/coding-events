@@ -18,7 +18,7 @@ import javax.validation.Valid;
 public class TagController {
 
     @Autowired
-    private TagRepository tagRepository;
+    TagRepository tagRepository;
 
     @GetMapping
     public String displayTags(Model model) {
@@ -38,7 +38,7 @@ public class TagController {
     public String processCreateTagForm(@ModelAttribute @Valid Tag tag,
                                         Errors errors, Model model) {
         if(errors.hasErrors()) {
-            model.addAttribute("title", "Tags");
+            model.addAttribute("title", "Create Tag");
             model.addAttribute(tag);
             return "tags/create";
         }
